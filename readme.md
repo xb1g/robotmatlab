@@ -164,26 +164,7 @@ disp('Difference:');
 disp(delta_q_single - delta_q_multiple);
 ```
 
-## 6. Using RoboAnalyzer Alternative
-
-If you prefer to use RoboAnalyzer:
-
-1. Download and install RoboAnalyzer from http://www.roboanalyzer.com/
-2. Create a new robot model:
-   - Select "Spherical (RRP)" configuration
-   - Define joint parameters (lengths, ranges)
-3. For forward kinematics:
-   - Input 16 different sets of joint values
-   - Record end-effector positions
-4. For inverse kinematics:
-   - Input 16 different end-effector positions
-   - Record calculated joint values
-5. Compare results between forward and inverse calculations
-6. For Jacobian analysis:
-   - Use the provided "Jacobian" feature in RoboAnalyzer
-   - Compare single vs. multiple step movements
-
-## 7. Visualization and Analysis
+## 6. Visualization and Analysis
 
 For a more visual approach, you can add this code:
 
@@ -209,7 +190,7 @@ xlabel('Joint Number');
 ylabel('Joint Change');
 ```
 
-## 8. Expected Findings and Analysis
+## 7. Expected Findings and Analysis
 
 When comparing the Jacobian motion with one step versus ten steps:
 
